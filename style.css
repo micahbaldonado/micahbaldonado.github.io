@@ -1,6 +1,6 @@
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f9f9f6;
+  font-family: Georgia, serif;
+  background-color: #f7f6f2;
   color: #333;
   margin: 0;
   padding: 0;
@@ -10,64 +10,65 @@ body {
 header {
   background-color: #fff;
   padding: 40px 20px 20px;
-  text-align: center;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-h1 {
+.title-section {
+  flex: 1;
+}
+
+.title-section h1 {
   margin: 0;
-  font-size: 2.2em;
-  font-weight: 600;
+  font-size: 2.3em;
 }
 
-.subtitle {
-  font-size: 1.1em;
-  color: #777;
-  margin-top: 5px;
+.title-section p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 1em;
 }
 
 nav {
-  margin-top: 20px;
+  flex: 1;
+  text-align: right;
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #007acc;
+  color: #2a4a76;
   font-weight: 500;
+  font-size: 1em;
 }
 
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-section {
-  margin-bottom: 60px;
-}
-
-h2 {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-
-.profile-img {
-  float: right;
-  margin-left: 20px;
+img.profile {
+  float: left;
   width: 160px;
   border-radius: 100%;
+  margin-right: 30px;
   border: 1px solid #ccc;
-}
-
-ul {
-  padding-left: 20px;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   color: #aaa;
   font-size: 0.9em;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #2a4a76;
+  text-decoration: none;
 }
