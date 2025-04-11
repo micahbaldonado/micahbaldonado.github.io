@@ -5,36 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Micah Baldonado</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Source Serif Pro', Georgia, serif;
+      background-color: #f4f4f4;
+      color: #2c2c2c;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      background-color: #fff;
+    }
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      font-size: 0.95em;
+    }
+    .wrapper {
+      max-width: 1080px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 60px;
+    }
+    .profile-pic {
+      flex: 0 0 260px;
+      text-align: center;
+    }
+    .profile-pic img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #bbb;
+    }
+    .profile-meta {
+      margin-top: 15px;
+    }
+    .profile-meta h2 {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin: 10px 0 5px;
+    }
+    .profile-meta p {
+      font-size: 0.9em;
+      color: #777;
+      margin: 0 0 15px;
+    }
+    .profile-links {
+      text-align: left;
+      font-size: 0.85em;
+      line-height: 2em;
+      padding-top: 5px;
+    }
+    .profile-links a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      gap: 8px;
+    }
+    .profile-links a svg {
+      width: 18px;
+      height: 18px;
+    }
+    .about-text {
+      flex: 1;
+    }
+    .about-text h1 {
+      margin-top: 0;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+    .about-text p {
+      font-size: 1.05em;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 0 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <div class="title-section">
-    <h1>Micah Baldonado</h1>
-    <p>M.S. Artificial Intelligence Engineering – Biomedical Engineering @ Carnegie Mellon</p>
+  <header>
+    <div><strong>Micah Baldonado</strong></div>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="cv.html">Resume</a>
+      <a href="personal.html">Personal</a>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <div class="profile-pic">
+      <img src="micah.jpg" alt="Micah Baldonado">
+      <div class="profile-meta">
+        <h2>Micah Baldonado</h2>
+        <p>he/him</p>
+        <div class="profile-links">
+          <a href="mailto:micahbaldonado@gmail.com">📧 Email: micahbaldonado@gmail.com</a>
+          <a href="https://github.com/micahbaldonado" target="_blank">🐙 GitHub: micahbaldonado</a>
+          <a href="https://www.linkedin.com/in/micahbaldonado" target="_blank">🔗 LinkedIn</a>
+          <a href="resume.pdf" target="_blank">📄 Resume (PDF)</a>
+          <a href="https://www.cmu.edu/bme/Admissions/resources/micah-baldonado-ambassador-file.pdf" target="_blank">🎓 CMU Ambassador Bio</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <h1>About me</h1>
+      <p>I’m currently pursuing my M.S. in Artificial Intelligence Engineering – Biomedical Engineering at Carnegie Mellon University. I serve as a BME Student Ambassador and believe engineering and human connection aren’t mutually exclusive—they inform one another. I’m driven to build interpretable, human-centered AI that helps people flourish.</p>
+      <p>Born and raised in Charlotte, NC, I completed my undergraduate degree in Biomedical Engineering through the joint UNC–Chapel Hill and NC State program. I fell in love with machine learning during a neuroscience research internship analyzing mouse behavior. That spark led me to CMU, where this program perfectly blends my background and ambition.</p>
+      <p>Outside of academics, I explore life through piano, drawing, pottery, photography, meditation, and languages. I also enjoy games like Smash Bros., Sudoku, and chess. My long-term goal is to become an AI Engineer whose work meaningfully impacts health, cognition, and society. I’m passionate about learning and building systems that make the world a little more intelligent—and a little more human.</p>
+    </div>
   </div>
-  <nav>
-    <a href="index.html">About</a>
-    <a href="cv.html">Resume</a>
-    <a href="personal.html">Personal</a>
-  </nav>
-</header>
 
-<main>
-  <img src="micah.jpg" alt="Micah Baldonado" class="profile"/>
-  <h2>About me</h2>
-  <p>Outside of school, I love learning. I am interested in a variety of topics from psychology to philosophy. I enjoy exploring creativity through poetry, photography, and drawing. I like to meditate and work out. I also genuinely love deep learning. Over the summer, I plan on deep-diving in generative art, making art with AI.</p>
-
-
-  <div class="links">
-    <a href="mailto:micahbaldonado@gmail.com">Email</a>
-    <a href="https://github.com/micahbaldonado" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/micahbaldonado" target="_blank">LinkedIn</a>
-    <a href="resume.pdf" target="_blank">Resume</a>
-  </div>
-</main>
-
-<footer>
-  <p>© 2025 Micah Baldonado</p>
-</footer>
+  <footer>
+    <p>© 2025 Micah Baldonado</p>
+  </footer>
 </body>
 </html>
