@@ -16,7 +16,6 @@
     header {
       padding: 20px 40px;
       display: flex;
-      
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #ddd;
@@ -27,48 +26,51 @@
       color: #666;
       font-weight: 500;
     }
-    .main-container {
+    .wrapper {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 0 20px;
       display: flex;
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 40px;
+      gap: 60px;
     }
-    .sidebar {
-      width: 240px;
+    .profile-pic {
+      flex: 0 0 200px;
       text-align: center;
     }
-    .sidebar img {
+    .profile-pic img {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
       border: 1px solid #ccc;
     }
-    .sidebar h2 {
-      font-size: 1.3em;
-      margin: 10px 0 5px;
+    .profile-meta {
+      margin-top: 15px;
     }
-    .sidebar p {
+    .profile-meta h2 {
+      font-size: 1.3em;
+      margin: 0;
+    }
+    .profile-meta p {
       font-size: 0.95em;
       color: #777;
-      margin: 0 0 20px;
+      margin: 5px 0 15px;
     }
-    .sidebar a {
+    .profile-links a {
       display: block;
-      margin: 8px 0;
       font-size: 0.95em;
       color: #444;
       text-decoration: none;
+      margin: 5px 0;
     }
-    .content {
+    .about-text {
       flex: 1;
-      padding-left: 60px;
     }
-    .content h1 {
+    .about-text h1 {
       margin-top: 0;
       font-size: 1.8em;
     }
-    .content p {
+    .about-text p {
       font-size: 1.05em;
       line-height: 1.7;
     }
@@ -90,17 +92,22 @@
     </nav>
   </header>
 
-  <div class="main-container">
-    <div class="sidebar">
+  <div class="wrapper">
+    <div class="profile-pic">
       <img src="micah.jpg" alt="Micah Baldonado">
-      <h2>Micah Baldonado</h2>
-      <p>he/him</p>
-      <a href="mailto:micahbaldonado@gmail.com">📧 Email</a>
-      <a href="https://github.com/micahbaldonado" target="_blank">🐙 GitHub</a>
-      <a href="https://linkedin.com/in/micahbaldonado" target="_blank">💼 LinkedIn</a>
-      <a href="resume.pdf" target="_blank">📄 Resume</a>
+      <div class="profile-meta">
+        <h2>Micah Baldonado</h2>
+        <p>he/him</p>
+        <div class="profile-links">
+          <a href="mailto:micahbaldonado@gmail.com">📧 Email</a>
+          <a href="https://github.com/micahbaldonado" target="_blank">🐙 GitHub</a>
+          <a href="https://linkedin.com/in/micahbaldonado" target="_blank">💼 LinkedIn</a>
+          <a href="resume.pdf" target="_blank">📄 Resume</a>
+        </div>
+      </div>
     </div>
-    <div class="content">
+
+    <div class="about-text">
       <h1>About me</h1>
       <p>I’m a Master’s student at Carnegie Mellon University studying Artificial Intelligence Engineering and Biomedical Engineering. My work spans interpretable deep learning, clinical machine learning, and vision-based anatomical modeling. I’m interested in bridging AI with human-centered applications, including health and cognition.</p>
       <p>Outside of technical work, I explore form and feeling through pottery, photography, and meditation. My path weaves together engineering, art, and inquiry into what it means to live with awareness and purpose.</p>
