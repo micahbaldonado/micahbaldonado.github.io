@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Micah Baldonado</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f9f9f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 20px 40px;
+      display: flex;
+      
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #666;
+      font-weight: 500;
+    }
+    .main-container {
+      display: flex;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 40px;
+    }
+    .sidebar {
+      width: 240px;
+      text-align: center;
+    }
+    .sidebar img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #ccc;
+    }
+    .sidebar h2 {
+      font-size: 1.3em;
+      margin: 10px 0 5px;
+    }
+    .sidebar p {
+      font-size: 0.95em;
+      color: #777;
+      margin: 0 0 20px;
+    }
+    .sidebar a {
+      display: block;
+      margin: 8px 0;
+      font-size: 0.95em;
+      color: #444;
+      text-decoration: none;
+    }
+    .content {
+      flex: 1;
+      padding-left: 60px;
+    }
+    .content h1 {
+      margin-top: 0;
+      font-size: 1.8em;
+    }
+    .content p {
+      font-size: 1.05em;
+      line-height: 1.7;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 0 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div><strong>Micah Baldonado</strong></div>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="cv.html">Resume</a>
+      <a href="personal.html">Personal</a>
+    </nav>
+  </header>
 
-<header>
-  <div class="title-section">
-    <h1>Micah Baldonado</h1>
-    <p>M.S. Artificial Intelligence Engineering – Biomedical Engineering @ Carnegie Mellon</p>
+  <div class="main-container">
+    <div class="sidebar">
+      <img src="micah.jpg" alt="Micah Baldonado">
+      <h2>Micah Baldonado</h2>
+      <p>he/him</p>
+      <a href="mailto:micahbaldonado@gmail.com">📧 Email</a>
+      <a href="https://github.com/micahbaldonado" target="_blank">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/micahbaldonado" target="_blank">💼 LinkedIn</a>
+      <a href="resume.pdf" target="_blank">📄 Resume</a>
+    </div>
+    <div class="content">
+      <h1>About me</h1>
+      <p>I’m a Master’s student at Carnegie Mellon University studying Artificial Intelligence Engineering and Biomedical Engineering. My work spans interpretable deep learning, clinical machine learning, and vision-based anatomical modeling. I’m interested in bridging AI with human-centered applications, including health and cognition.</p>
+      <p>Outside of technical work, I explore form and feeling through pottery, photography, and meditation. My path weaves together engineering, art, and inquiry into what it means to live with awareness and purpose.</p>
+    </div>
   </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="coursework.html">Coursework</a>
-    <a href="cv.html">CV</a>
-    <a href="mailto:micahbaldonado@gmail.com">Contact</a>
-  </nav>
-</header>
 
-<main>
-  <img src="micah.jpg" alt="Micah Baldonado" class="profile"/>
-  <h2>About me</h2>
-  <p>I’m a Master’s student at Carnegie Mellon University studying Artificial Intelligence Engineering and Biomedical Engineering. My work spans interpretable deep learning, clinical machine learning, and vision-based anatomical modeling. I also enjoy exploring creativity through pottery, photography, and philosophy of mind.</p>
-
-  <div class="links">
-    <a href="mailto:micahbaldonado@gmail.com">Email</a>
-    <a href="https://github.com/micahbaldonado" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/micahbaldonado" target="_blank">LinkedIn</a>
-    <a href="resume.pdf" target="_blank">Resume</a>
-  </div>
-</main>
-
-<footer>
-  <p>© 2025 Micah Baldonado</p>
-</footer>
-
+  <footer>
+    <p>© 2025 Micah Baldonado</p>
+  </footer>
 </body>
 </html>
