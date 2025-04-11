@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Micah Baldonado</title>
+  <title>Personal | Micah Baldonado</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap');
 
@@ -34,59 +35,13 @@
       max-width: 1080px;
       margin: 60px auto;
       padding: 0 20px;
-      display: flex;
-      gap: 60px;
     }
-    .profile-pic {
-      flex: 0 0 260px;
-      text-align: center;
-    }
-    .profile-pic img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 1px solid #bbb;
-    }
-    .profile-meta {
-      margin-top: 15px;
-    }
-    .profile-meta h2 {
-      font-size: 1.2em;
-      font-weight: 600;
-      margin: 10px 0 5px;
-    }
-    .profile-meta p {
-      font-size: 0.9em;
-      color: #777;
-      margin: 0 0 15px;
-    }
-    .profile-links {
-      text-align: left;
-      font-size: 0.85em;
-      line-height: 2em;
-      padding-top: 5px;
-    }
-    .profile-links a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #333;
-      gap: 8px;
-    }
-    .profile-links a svg {
-      width: 18px;
-      height: 18px;
-    }
-    .about-text {
-      flex: 1;
-    }
-    .about-text h1 {
+    .personal-text h1, .section h2 {
       margin-top: 0;
       font-size: 1.8em;
       font-weight: 600;
     }
-    .about-text p {
+    .personal-text p, .section p {
       font-size: 1.05em;
       line-height: 1.7;
       margin-bottom: 18px;
@@ -97,6 +52,9 @@
       font-size: 0.9em;
       color: #aaa;
     }
+    .section {
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -104,32 +62,27 @@
     <div><strong>Micah Baldonado</strong></div>
     <nav>
       <a href="index.html">About</a>
-      <a href="resume.html">Resume</a>
+      <a href="resume.pdf">Resume</a>
       <a href="personal.html">Personal</a>
     </nav>
   </header>
 
   <div class="wrapper">
-    <div class="profile-pic">
-      <img src="micah.jpg" alt="Micah Baldonado">
-      <div class="profile-meta">
-        <h2>Micah Baldonado</h2>
-        <p>he/him</p>
-        <div class="profile-links">
-          <a href="mailto:micahbaldonado@gmail.com">📧 Email: micahbaldonado@gmail.com</a>
-          <a href="https://github.com/micahbaldonado" target="_blank">🐙 GitHub: micahbaldonado</a>
-          <a href="https://www.linkedin.com/in/micahbaldonado" target="_blank">🔗 LinkedIn</a>
-          <a href="resume.pdf" target="_blank">📄 Resume (PDF)</a>
-          <a href="https://www.cmu.edu/bme/Admissions/resources/micah-baldonado-ambassador-file.pdf" target="_blank">🎓 CMU Ambassador Bio</a>
-        </div>
-      </div>
+    <div class="personal-text">
+      <h1>Life Beyond Academics</h1>
+      <p>I'm deeply interested in philosophy and psychology, exploring topics related to consciousness, mindfulness, and the nature of human experience. These interests help shape my worldview and influence how I approach my work in AI and biomedical engineering.</p>
+      <p>Outside of academics, I immerse myself in piano, drawing, poetry, and photography. Each of these activities allows me to explore creativity and expression in unique ways. I practice meditation regularly, finding balance and clarity in mindfulness. Additionally, I maintain an active lifestyle through regular workouts and enjoy the challenge and stimulation of learning new languages.</p>
+      <p>In my leisure time, I love engaging with strategic and competitive games such as Super Smash Bros and chess, appreciating the strategic depth and community interaction they offer.</p>
     </div>
 
-    <div class="about-text">
-      <h1>About me</h1>
-      <p>I’m currently pursuing my M.S. in Artificial Intelligence Engineering – Biomedical Engineering at Carnegie Mellon University. I serve as a BME Student Ambassador and believe engineering and human connection aren’t mutually exclusive—they inform one another. I’m driven to build interpretable, human-centered AI that helps people flourish.</p>
-      <p>Born and raised in Charlotte, NC, I completed my undergraduate degree in Biomedical Engineering through the joint UNC–Chapel Hill and NC State program. I fell in love with machine learning during a neuroscience research internship analyzing mouse behavior. That spark led me to CMU, where this program perfectly blends my background and ambition.</p>
-      <p>Outside of academics, I explore life through piano, drawing, pottery, photography, meditation, and languages. I also enjoy games like Smash Bros., Sudoku, and chess. My long-term goal is to become an AI Engineer whose work meaningfully impacts health, cognition, and society. I’m passionate about learning and building systems that make the world a little more intelligent—and a little more human.</p>
+    <div class="section">
+      <h2>Poetry</h2>
+      <p>Poetry provides me a means to distill thoughts and emotions into concise, impactful expressions. It’s an art form through which I explore personal reflections, capture fleeting moments, and express ideas that resonate deeply with me.</p>
+    </div>
+
+    <div class="section">
+      <h2>Photography</h2>
+      <p>Photography allows me to see the world through a different lens—literally and figuratively. Capturing images encourages me to slow down and appreciate the beauty and complexity of everyday scenes. I particularly enjoy experimenting with composition and lighting to tell visual stories that evoke emotion and contemplation.</p>
     </div>
   </div>
 
